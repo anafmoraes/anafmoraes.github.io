@@ -11,60 +11,141 @@
     <link href="icons/css/all.css" rel="stylesheet">
     <script src="js/bootstrap.js"></script>
 </head>
-<body>
-<header class="text-center">
-    <img src="img/inclusive.svg" class="icon"/>
-    <h1 class="title">Rede de Inclusão Social</h1>
-</header>
-<div class="row justify-content-center">
-    <aside class="col-sm-12 col-md-7">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore
-            magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore
-            magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore
-            magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore
-            magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore
-            magna aliqua.</p>
-        <div class="text-center">
-            <a class="btn btn-primary"  href="about.html">
-                <i class="fas fa-plus"></i>
-                Saiba mais
+<body class="font-weight-light">
+
+<header class="masthead" style="background-image: url('img/background.jpg');" id="home">
+    <nav class="navbar navbar-expand-lg shadow">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/inclusive.svg" class="icon"/>
+                <h1 class="title font-weight-light">Rede de Inclusão Social</h1>
             </a>
-        </div>
-    </aside>
-
-    <section class="wrapper fadeInDown col-sm-12 col-md-4" id="formContent">
-        <h2 class="fadeIn first">Entrar</h2>
-        <form class="form-group">
-            <div class="input-group fadeIn second">
-                <div class="input-group-prepend">
-                    <span class="oi input-group-text"> <i class="fas fa-envelope"></i> </span>
-                </div>
-                <input name="email" id="email" class="form-control" placeholder="Email" type="email">
-            </div>
-            <div class="input-group fadeIn third">
-                <div class="input-group-prepend">
-                    <span class="oi input-group-text"> <i class="fas fa-key"></i> </span>
-                </div>
-                <input class="form-control" placeholder="Senha" type="password">
-            </div> <!-- input-group.// -->
-            <input type="buttom" class="fadeIn fourth btn btn-success" value="Login">
-            <br/><a href="recover_password.html">Esqueceu sua senha?</a>
-        </form>
-        <div class="text-center">
-            <button type="button" class="btn btn-primary">
-                <i class="fas fa-user"></i>
-                Cadastrar
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-        </div><br/>
-    </section>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Início
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#divulgation">Divulgação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12 text-center">
+                <p class="lead">Divulgação de eventos acessíveis
+                    <br/> à comunidade surda
+                </p>
+            </div>
+        </div>
+    </div>
+</header>
 
-</div>
+<section class="py-5" id="project">
+    <div class="container">
+        <h3 class="font-weight-light"> O projeto </h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor nisi non magna faucibus vulputate.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis blandit ut
+            nulla quis fringilla. Praesent ante quam, accumsan vel mauris eget, ullamcorper volutpat leo. Nulla rutrum
+            tristique nisi nec congue. Donec fringilla sollicitudin metus sed tempor. Sed accumsan arcu vehicula mi
+            interdum volutpat. Donec tincidunt elit eget elementum commodo. Phasellus fermentum libero vitae accumsan
+            posuere. Nam nec vulputate diam.
+        </p>
+    </div>
+</section>
+
+<section class="py-5" id="divulgation">
+    <div class="container">
+        <h3 class="font-weight-light"> Mural de divulgação </h3>
+        <div class="card-deck">
+            <div class="card col-6 col-md-4">
+                <img class="card-img-top" src="img/default.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <p class="card-text">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                </div>
+            </div>
+            <div class="card col-6 col-md-4">
+                <img class="card-img-top" src="img/default.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                        content.</p>
+                    <p class="card-text">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                </div>
+            </div>
+            <div class="card col-6 col-md-4">
+                <img class="card-img-top" src="img/default.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                    <p class="card-text">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                </div>
+            </div>
+            <div class="card col-6 col-md-4">
+                <img class="card-img-top" src="img/default.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                    <p class="card-text">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5" id="contact">
+    <div class="container">
+        <h3 class="font-weight-light"> Contato </h3><br/>
+        <div class="row">
+        <span class="col-sm">
+        <i class="fab fa-facebook"></i>
+        facebook.com/ana96moraes </span>
+            <span class="col-sm">
+        <i class="fab fa-instagram"></i>
+        instagram.com/moraes__anna </span>
+            <span class="col-sm">
+        <i class="fas fa-envelope"></i>
+        ana96moraes@gmail.com </span>
+            <span class="col-sm">
+        <i class="fab fa-whatsapp"></i>
+        (31) 99234-8018 </span>
+        </div>
+    </div>
+</section>
+
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

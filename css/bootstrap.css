@@ -5,6 +5,24 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+ .masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.navbar, footer {
+background-color: rgba(239,214,192, 0);
+text-color: black;
+}
+
+.navbar a {
+    color: black;
+}
+
 .wrapper {
   display: flex;
   align-items: center;
@@ -153,6 +171,7 @@ input[type=text]:focus {
 }
 
 :root {
+  --default:
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -198,7 +217,7 @@ input[type=text]:focus {
 }
 
 section {
-    margin: 15px
+    margin: 15px;
 }
 
 aside {
@@ -218,7 +237,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 body {
-  margin: 50px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
@@ -552,7 +570,7 @@ h6, .h6 {
 }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1.95rem;
   font-weight: 300;
 }
 
@@ -707,7 +725,7 @@ pre code {
 }
 
 .container {
-  width: 100%;
+  width: 85%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -8149,6 +8167,12 @@ button.bg-dark:focus {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 1020;
+  }
+  .sticky-bottom {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
     z-index: 1020;
   }
 }
