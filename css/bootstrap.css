@@ -13,6 +13,10 @@
   background-repeat: no-repeat;
 }
 
+.bg-default{
+    background-color: rgba(239, 214, 194, 0.3)
+}
+
 .navbar, footer {
 background-color: rgba(239,214,192, 0);
 text-color: black;
@@ -4534,7 +4538,7 @@ input[type="button"].btn-block {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.95rem;
   line-height: inherit;
   white-space: nowrap;
 }
