@@ -35,7 +35,7 @@
                         <a class="nav-link" href="index.html#contact">Contato</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="login.html">Login
+                        <a class="nav-link" href="login.html">Acesso
                         <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
@@ -46,26 +46,35 @@
 <section class="container wrapper fadeInDown col-sm" id="formContent">
     <h2 class="fadeIn first">Entrar</h2>
     <form class="form-group">
-        <div class="input-group fadeIn second">
-            <div class="input-group-prepend">
-                <span class="oi input-group-text"> <i class="fas fa-envelope"></i> </span>
+        <div class="form-row">
+            <div class="col-md-12 mb-3">
+                <label for="email">Email</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                    </div>
+                    <input type="email" class="form-control" id="email" placeholder="email@exemplo.com"
+                           aria-describedby="email" required>
+                </div>
             </div>
-            <input name="email" id="email" class="form-control" placeholder="Email" type="email">
         </div>
-        <div class="input-group fadeIn third">
-            <div class="input-group-prepend">
-                <span class="oi input-group-text"> <i class="fas fa-key"></i></span>
+        <div class="form-row">
+            <div class="col-md-12 mb-3">
+                <label for="password">Senha</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                    </div>
+                    <input type="password" class="form-control" id="password" placeholder="******"
+                           aria-describedby="password" required>
+                </div>
             </div>
-            <input class="form-control" placeholder="Senha" type="password">
         </div>
-        <buttom class="fadeIn fourth btn btn-success" value="Login">Login</buttom>
-        <br/><a href="recover_password.html" class="fadeIn fourth">Esqueceu sua senha?</a>
+        <buttom class="btn btn-success" value="Login">Login</buttom>
+        <br/><a href="recover_password.html">Esqueceu sua senha?</a>
     </form>
-    <div class="text-center fadeIn fourth">
-        <a href="signup.html" type="button" class="btn btn-primary">
-            <i class="fas fa-user"></i>
-            Cadastrar
-        </a>
+    <div class="text-center">
+         Se não possui cadastro, <a href="signup.html"> cadastre-se aqui!</a>
     </div>
     <br/>
 </section>

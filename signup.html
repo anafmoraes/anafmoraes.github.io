@@ -14,57 +14,136 @@
 <body class="font-weight-light bg-default">
 
 <nav class="navbar navbar-expand-lg navbar-light shadow">
-        <div class="container">
-            <a class="navbar-brand font-weight-light" href="index.html">Rede de Inclusão Social</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#home">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#project">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#divulgation">Divulgação</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#contact">Contato</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="login.html">Login
+    <div class="container">
+        <a class="navbar-brand font-weight-light" href="index.html">Rede de Inclusão Social</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#project">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#divulgation">Divulgação</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact">Contato</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="login.html">Acesso
                         <span class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
-            </div>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
 <section class="container wrapper fadeInDown col-sm" id="formContent">
     <h2 class="fadeIn first">Cadastrar</h2>
     <form class="form-group">
-        <div class="input-group fadeIn second">
-            <div class="input-group-prepend">
-                <span class="oi input-group-text"> <i class="fas fa-envelope"></i> </span>
+        <div class="form-row">
+            <div class="col-md-12 mb-3">
+                <label for="name">Nome</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                    </div>
+                    <input type="text" class="form-control" id="name" placeholder="Nome"
+                           aria-describedby="name" required>
+                </div>
             </div>
-            <input name="email" id="email" class="form-control" placeholder="Email" type="email">
         </div>
-        <div class="input-group fadeIn third">
-            <div class="input-group-prepend">
-                <span class="oi input-group-text"> <i class="fas fa-key"></i> </span>
+        <div class="form-row">
+            <div class="col-md-12 mb-3">
+                <label for="email">Email</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                    </div>
+                    <input type="email" class="form-control" id="email" placeholder="email@exemplo.com"
+                           aria-describedby="email" required>
+                </div>
             </div>
-            <input class="form-control" placeholder="Senha" type="password">
         </div>
-        <buttom class="fadeIn fourth btn btn-success" value="Cadastrar">Login</buttom>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="password">Senha</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                    </div>
+                    <input type="password" class="form-control" id="password" placeholder="******"
+                           aria-describedby="password" required>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="password">Confirmação de senha</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                    </div>
+                    <input type="password" class="form-control" id="password2" placeholder="******"
+                           aria-describedby="password2" required>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="state">Estado</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-globe"></i></span>
+                    </div>
+                    <select id="state" class="form-control">
+                        <option selected>Escolher...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="city">Cidade</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-map-marker"></i></span>
+                    </div>
+                    <select id="city" class="form-control">
+                        <option selected>Escolher...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-12 mb-3">
+                <label for="work">Ocupação</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-briefcase"></i></span>
+                    </div>
+                    <input type="text" class="form-control" id="work" placeholder="Estudante"
+                           aria-describedby="work" required>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-12 mb-3">
+                <div class="input-group">
+                    <i class="fa fa-deaf"></i>
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1"> </label> Sou surdo
+
+                </div>
+            </div>
+        </div>
+        <buttom class="btn btn-success" value="Cadastrar">Salvar</buttom>
     </form>
-    <div class="text-center fadeIn fourth">
-        <a href="login.html" type="button" class="btn btn-primary">
-            <i class="fas fa-user"></i>
-            Login
-        </a>
+    <div class="text-center">
+        Tem uma conta? <a href="login.html">Entre aqui!</a>
     </div>
     <br/>
 </section>
