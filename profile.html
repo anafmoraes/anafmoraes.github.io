@@ -23,19 +23,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#home">Início</a>
+                    <a class="nav-link" href="events.html">Eventos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#project">Sobre</a>
+                    <a class="nav-link" href="tags.html">Assuntos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#divulgation">Divulgação</a>
+                    <a class="nav-link" href="users.html">Usuários</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#contact">Contato</a>
+                    <a class="nav-link" href="activities.html">Atividades</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="login.html">Acesso
+                    <a class="nav-link" href="profile.html">Meu Perfil
                         <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
@@ -43,9 +43,16 @@
     </div>
 </nav>
 
-<section class="container wrapper fadeInDown col-sm" id="formContent">
-    <h2 class="font-weight-light"><strong>Cadastrar</strong></h2>
-    <form class="form-group">
+
+<section class="container wrapper">
+    <h2 class="font-weight-light"><strong> Meu perfil</strong></h2>
+    <form class="form-group text-center">
+        <figure class="figure">
+            <img class="img-rounded img-responsive" src="img/default.png" alt="">
+        </figure>
+        <div class="form-inline">
+            <input type="file" class="file-uploader pull-center text-center">
+        </div>
         <div class="form-row">
             <div class="col-md-12 mb-3">
                 <label for="name">Nome</label>
@@ -66,7 +73,7 @@
                         <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                     </div>
                     <input type="email" class="form-control" id="email" placeholder="email@exemplo.com"
-                           aria-describedby="email" required>
+                           aria-describedby="email" disabled>
                 </div>
             </div>
         </div>
@@ -140,12 +147,8 @@
                 </div>
             </div>
         </div>
-        <a href="profile.html" class="btn btn-success text-white">Salvar</a>
+        <buttom class="btn btn-success" value="Cadastrar">Salvar</buttom>
     </form>
-    <div class="text-center">
-        Tem uma conta? <a href="login.html">Entre aqui!</a>
-    </div>
-    <br/>
 </section>
 
 <!-- Optional JavaScript -->
