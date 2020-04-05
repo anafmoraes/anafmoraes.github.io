@@ -10,6 +10,8 @@
     <link href="css/bootstrap.css" rel="stylesheet"/>
     <link href="icons/css/all.css" rel="stylesheet">
     <script src="js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body class="font-weight-light bg-default">
 
@@ -62,14 +64,14 @@
         </div>
     </form>
     <section class="card">
-        <ul class="list-group list-group-flush">
+        <ul class="list-group list-group-flush" id="tags">
             <li class="list-group-item">
                 <div class="row">
                     <div class="col-3">
                         <img class="img-fluid" src="img/default.png"/>
                     </div>
                     <div class="col-8">
-                        <p>Texto</p>
+                        <p>Primeiro assunto</p>
                         <a href="#" class="text-dark"><i class="fas fa-heart text-red"></i> Seguir</a>
                     </div>
                 </div>
@@ -81,7 +83,7 @@
                         <img class="img-fluid" src="img/default.png"/>
                     </div>
                     <div class="col-8">
-                        <p>Texto</p>
+                        <p>Segundo assunto</p>
                         <a href="#" class="text-dark"><i class="far fa-heart text-red"></i> Seguir</a>
                     </div>
                 </div>
@@ -93,7 +95,7 @@
                         <img class="img-fluid" src="img/default.png"/>
                     </div>
                     <div class="col-8">
-                        <p>Texto</p>
+                        <p>Terceiro assunto</p>
                         <a href="#" class="text-dark"><i class="far fa-heart text-red"></i> Seguir</a>
                     </div>
                 </div>
@@ -103,9 +105,19 @@
     </section>
 </div>
 
-
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script>
+$(document).ready(function(){
+  $("#search").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#tags li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+
+</script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
