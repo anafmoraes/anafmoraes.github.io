@@ -25,10 +25,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="events.html">Eventos</a>
+                    <a class="nav-link active" href="events.html">Eventos <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="tags.html">Assuntos<span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="tags.html">Assuntos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="users.html">Usuários</a>
@@ -45,7 +45,7 @@
 </nav>
 
 <div class="container">
-    <h2 class="font-weight-light wrapper"><strong> Assuntos</strong></h2>
+    <h2 class="font-weight-light wrapper"><strong> Eventos</strong></h2>
     <form class="form-group">
         <div class="form-row">
             <div class="col-md-7 mb-3 center">
@@ -53,22 +53,60 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fas fa-search"></i></span>
                     </div>
-                    <input type="text" class="form-control" id="search" placeholder="Pesquisar assunto"
+                    <input type="text" class="form-control" id="search" placeholder="Pesquisar evento"
                            aria-describedby="name">
                 </div>
             </div>
         </div>
+
+        <div class="form-row">
+            <div class="col-md-6 mb-3 center">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-globe"></i></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+         <div class="form-row">
+            <div class="col-md-6 mb-3 center">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-map-marker"></i></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+         <div class="form-row">
+            <div class="col-md-6 mb-3 center">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-tag"></i></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <br/>
+        <button class="btn btn-success input-group-text bg-success text-white center" type="submit">
+            Pesquisar
+        </button>
     </form>
-    <hr/>
-    <section class="card">
-        <ul class="list-group list-group-flush" id="tags">
+    <section>
+        <hr/>
+        <ul class="card list-group list-group-flush" id="events">
             <li class="list-group-item">
                 <div class="row">
                     <div class="col-3">
                         <img class="img-fluid" src="img/default.png"/>
                     </div>
                     <div class="col-8">
-                        <p>Primeiro assunto</p>
+                        <p>Primeiro evento</p>
                         <a href="#" class="text-dark"><i class="fas fa-heart text-red"></i> Seguir</a>
                     </div>
                 </div>
@@ -80,7 +118,7 @@
                         <img class="img-fluid" src="img/default.png"/>
                     </div>
                     <div class="col-8">
-                        <p>Segundo assunto</p>
+                        <p>Segundo evento</p>
                         <a href="#" class="text-dark"><i class="far fa-heart text-red"></i> Seguir</a>
                     </div>
                 </div>
@@ -92,7 +130,7 @@
                         <img class="img-fluid" src="img/default.png"/>
                     </div>
                     <div class="col-8">
-                        <p>Terceiro assunto</p>
+                        <p>Terceiro evento</p>
                         <a href="#" class="text-dark"><i class="far fa-heart text-red"></i> Seguir</a>
                     </div>
                 </div>
@@ -102,17 +140,28 @@
     </section>
 </div>
 
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script>
 $(document).ready(function(){
   $("#search").on("keyup", function() {
     var value = $(this).val().toLowerCase();
-    $("#tags li").filter(function() {
+    $("#events li").filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });
 });
+
+
+
+
+</script>
+<script>
+    $('.select2').select2();
+
+
+
 </script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
