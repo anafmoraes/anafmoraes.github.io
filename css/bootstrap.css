@@ -24,13 +24,13 @@
   height: 100vh;
   min-height: 500px;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 .bg-default{
-    background-color: rgba(239, 214, 194, 0.3)
+    background-color: rgba(228, 181, 63, 0.1)
 }
 
 .navbar, footer {
@@ -772,7 +772,7 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1240px;
   }
 }
 
