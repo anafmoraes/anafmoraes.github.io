@@ -45,111 +45,118 @@
     </div>
 </nav>
 
-
-<section class="container wrapper">
-    <h2 class="font-weight-light"><strong> Meu perfil</strong></h2>
+<section class="container">
+    <h2 class="font-weight-light text-center"><strong> Meu perfil</strong></h2>
+    <br/>
     <form class="form-group text-center">
-        <figure class="figure">
-            <img class="img-rounded img-responsive" src="img/default.png" alt="">
-        </figure>
-        <div class="form-inline">
-            <input type="file" class="file-uploader pull-center text-center">
-        </div>
-        <div class="form-row">
-            <div class="col-md-12 mb-3">
-                <label for="name">Nome</label>
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="fas fa-user"></i></span>
-                    </div>
-                    <input type="text" class="form-control" id="name" placeholder="Nome"
-                           aria-describedby="name" required>
+        <div class="row">
+            <div class="col-md-5">
+                <figure class="figure ">
+                    <img class="img-rounded img-responsive profile-avatar" src="img/default.jpg" alt="">
+                </figure>
+                <div class="form-inline center">
+                    <input type="file" class="file-uploader pull-center">
                 </div>
             </div>
-        </div>
-        <div class="form-row">
-            <div class="col-md-12 mb-3">
-                <label for="email">Email</label>
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+            <div class="vl"></div>
+            <div class="col-md-6">
+                <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                        <label for="name">Nome</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" id="name" placeholder="Nome"
+                                   aria-describedby="name" required>
+                        </div>
                     </div>
-                    <input type="email" class="form-control" id="email" placeholder="email@exemplo.com"
-                           aria-describedby="email" disabled>
                 </div>
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="col-md-6 mb-3">
-                <label for="password">Senha</label>
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                        <label for="email">Email</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                            </div>
+                            <input type="email" class="form-control" id="email" placeholder="email@exemplo.com"
+                                   aria-describedby="email" disabled>
+                        </div>
                     </div>
-                    <input type="password" class="form-control" id="password" placeholder="******"
-                           aria-describedby="password" required>
                 </div>
-            </div>
-            <div class="col-md-6 mb-3">
-                <label for="password">Confirmação de senha</label>
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="password">Senha</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" class="form-control" id="password" placeholder="******"
+                                   aria-describedby="password" required>
+                        </div>
                     </div>
-                    <input type="password" class="form-control" id="password2" placeholder="******"
-                           aria-describedby="password2" required>
-                </div>
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="col-md-6 mb-3">
-                <label for="state">Estado</label>
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="fa fa-globe"></i></span>
+                    <div class="col-md-6 mb-3">
+                        <label for="password">Confirmação de senha</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" class="form-control" id="password2" placeholder="******"
+                                   aria-describedby="password2" required>
+                        </div>
                     </div>
-                    <select id="state" class="form-control">
-                        <option selected>Escolher...</option>
-                        <option>...</option>
-                    </select>
                 </div>
-            </div>
-            <div class="col-md-6 mb-3">
-                <label for="city">Cidade</label>
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="fa fa-map-marker"></i></span>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="state">Estado</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-globe"></i></span>
+                            </div>
+                            <select id="state" class="form-control">
+                                <option selected>Escolher...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
                     </div>
-                    <select id="city" class="form-control">
-                        <option selected>Escolher...</option>
-                        <option>...</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="col-md-12 mb-3">
-                <label for="work">Ocupação</label>
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="fa fa-briefcase"></i></span>
+                    <div class="col-md-6 mb-3">
+                        <label for="city">Cidade</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-map-marker"></i></span>
+                            </div>
+                            <select id="city" class="form-control">
+                                <option selected>Escolher...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
                     </div>
-                    <input type="text" class="form-control" id="work" placeholder="Estudante"
-                           aria-describedby="work" required>
                 </div>
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="col-md-12 mb-3">
-                <div class="input-group">
-                    <i class="fa fa-deaf"></i>
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1"> </label> Sou surdo
+                <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                        <label for="work">Ocupação</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-briefcase"></i></span>
+                            </div>
+                            <input type="text" class="form-control" id="work" placeholder="Estudante"
+                                   aria-describedby="work" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                        <div class="input-group">
+                            <i class="fa fa-deaf"></i>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1"> </label> Sou surdo
 
+                        </div>
+                    </div>
                 </div>
+                <buttom class="btn btn-success" value="Cadastrar">Salvar</buttom>
             </div>
         </div>
-        <buttom class="btn btn-success" value="Cadastrar">Salvar</buttom>
     </form>
 </section>
 
