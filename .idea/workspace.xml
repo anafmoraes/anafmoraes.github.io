@@ -9,7 +9,7 @@
       <change afterPath="$PROJECT_DIR$/../UFOP/maekawa/.idea/maekawa.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../UFOP/sd/.idea/sd.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +59,8 @@
       <option name="presentableId" value="Default" />
       <updated>1585519363024</updated>
       <workItem from="1586124781510" duration="1629000" />
-      <workItem from="1587596184139" duration="12398000" />
+      <workItem from="1587596184139" duration="12645000" />
+      <workItem from="1587674281722" duration="2721000" />
     </task>
     <task id="LOCAL-00001" summary="[Add] about page">
       <created>1585639126281</created>
