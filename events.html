@@ -12,6 +12,14 @@
     <script src="js/bootstrap.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tokenfield/0.12.0/css/bootstrap-tokenfield.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tokenfield/0.12.0/bootstrap-tokenfield.js"></script>
+
+
 </head>
 <body class="font-weight-light bg-default">
 
@@ -43,96 +51,60 @@
 
 <div class="container">
     <h2 class="font-weight-light wrapper"><strong> Eventos</strong></h2>
-    <form class="form-group">
+    <form class="form-group" id="filter">
         <div class="form-row">
-            <div class="col-md-7 mb-3 center">
+            <div class="col-md-12 mb-3">
                 <div class="input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fas fa-search"></i></span>
                     </div>
-                    <input type="text" class="form-control" id="search" placeholder="Pesquisar evento"
+                    <input type="text" class="form-control" id="search" placeholder="Nome"
                            aria-describedby="name">
                 </div>
             </div>
         </div>
 
-        <div class="container">
-            <div class="row searchFilter">
-                <div class="col-sm-12">
-                    <div class="input-group">
-                        <input id="table_filter" type="text" class="form-control"
-                               aria-label="Text input with segmented button dropdown">
-                        <div class="input-group-btn">
-                            <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
-                                    class="label-icon">Category</span> <span class="caret">&nbsp;</span></button>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <ul class="category_filters">
-                                    <li>
-                                        <input class="cat_type category-input" data-label="All" id="all" value=""
-                                               name="radios" type="radio"><label for="all">All</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" name="radios" id="Design" value="Design"><label
-                                            class="category-label" for="Design">Design</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" name="radios" id="Marketing" value="Marketing"><label
-                                            class="category-label" for="Marketing">Marketing</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" name="radios" id="Programming" value="Programming"><label
-                                            class="category-label" for="Programming">Programming</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" name="radios" id="Sales" value="Sales"><label
-                                            class="category-label" for="Sales">Sales</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" name="radios" id="Support" value="Support"><label
-                                            class="category-label" for="Support">Support</label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <button id="searchBtn" type="button" class="btn btn-secondary btn-search"><span
-                                    class="glyphicon glyphicon-search">&nbsp;</span> <span
-                                    class="label-icon">Search</span></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="form-row">
-            <div class="col-md-6 mb-3 center">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="fa fa-globe"></i></span>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="form-row">
-            <div class="col-md-6 mb-3 center">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="fa fa-map-marker"></i></span>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-        <div class="form-row">
-            <div class="col-md-6 mb-3 center">
+            <div class="col-md-12 mb-3">
                 <div class="input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="fa fa-tag"></i></span>
                     </div>
+                    <input type="text" name="skill" id="skill" class="form-control" placeholder="Assuntos"/>
+                </div>
+            </div>
+        </div>
 
+        <div class="form-row">
+            <div class="col-md-12 mb-3">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-globe"></i></span>
+                    </div>
+                    <input type="text" class="form-control" list="airports" name="airports" placeholder="Estado"/>
+                    <datalist id="airports">
+                        <option value="Berlin">
+                        <option value="Los Angeles">
+                        <option value="Moscow">
+                        <option value="Paris">
+                    </datalist>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-12 mb-3">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-map-marker"></i></span>
+                    </div>
+                    <input type="text" class="form-control" list="airports" name="airports" placeholder="Cidade"/>
+                    <datalist id="airports">
+                        <option value="Berlin">
+                        <option value="Los Angeles">
+                        <option value="Moscow">
+                        <option value="Paris">
+                    </datalist>
                 </div>
             </div>
         </div>
@@ -141,77 +113,91 @@
             Pesquisar
         </button>
     </form>
+    <hr/>
     <section>
-        <hr/>
-        <ul class="card list-group list-group-flush" id="events">
-            <li class="list-group-item">
-                <div class="row">
-                    <div class="col-3">
-                        <img class="img-fluid" src="img/default.png"/>
-                    </div>
-                    <div class="col-8">
-                        <p>Primeiro evento</p>
-                        <a href="#" class="text-dark"><i class="fas fa-heart text-red"></i> Seguir</a>
-                    </div>
-                </div>
-
-            </li>
-            <li class="list-group-item">
-                <div class="row">
-                    <div class="col-3">
-                        <img class="img-fluid" src="img/default.png"/>
-                    </div>
-                    <div class="col-8">
-                        <p>Segundo evento</p>
-                        <a href="#" class="text-dark"><i class="far fa-heart text-red"></i> Seguir</a>
-                    </div>
-                </div>
-
-            </li>
-            <li class="list-group-item">
-                <div class="row">
-                    <div class="col-3">
-                        <img class="img-fluid" src="img/default.png"/>
-                    </div>
-                    <div class="col-8">
-                        <p>Terceiro evento</p>
-                        <a href="#" class="text-dark"><i class="far fa-heart text-red"></i> Seguir</a>
+        <div class="row">
+            <div class="col-lg-6 mb-6">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="text-muted text-right">quarta-feira, 22 de abril de 2020
+                            <br/>
+                            Tipo do evento
+                        </p>
+                        <h5 class="card-title">Título de um evento...</h5>
+                        <div class="row">
+                            <div class="col">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                    elit. Ut eum
+                                    similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto
+                                    dolore modi
+                                    dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                                <p class="text-muted">
+                                    <i class="fa fa-map-pin" aria-hidden="true"></i>
+                                    &ensp; Endereço </br>
+                                </p>
+                                <a href="" class="btn btn-outline-success btn-sm">Detalhes</a>
+                                <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-            </li>
-        </ul>
+            </div>
+            <div class="col-lg-6 mb-6">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="text-muted text-right">terça-feira, 21 de abril de 2020
+                            <br/>
+                            Tipo do evento
+                        </p>
+                        <h5 class="card-title">Título de um evento...</h5>
+                        <div class="row">
+                            <div class="col">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                    elit. Ut eum
+                                    similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto
+                                    dolore modi
+                                    dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                                <p class="text-muted">
+                                    <i class="fa fa-map-pin" aria-hidden="true"></i>
+                                    &ensp; Endereço </br>
+                                </p>
+                                <a href="" class="btn btn-outline-success btn-sm">Detalhes</a>
+                                <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-6">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="text-muted text-right">segunda-feira, 20 de abril de 2020
+                            <br/>
+                            Tipo do evento
+                        </p>
+                        <h5 class="card-title">Título de um evento...</h5>
+                        <div class="row">
+                            <div class="col">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                    elit. Ut eum
+                                    similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto
+                                    dolore modi
+                                    dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                                <p class="text-muted">
+                                    <i class="fa fa-map-pin" aria-hidden="true"></i>
+                                    &ensp; Endereço </br>
+                                </p>
+                                <a href="" class="btn btn-outline-success btn-sm">Detalhes</a>
+                                <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </div>
 
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script>
-$(document).ready(function(){
-  $("#search").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#events li").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-});
-
-
-
-
-
-</script>
-<script>
-    $('.select2').select2();
-
-
-
-
-</script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
@@ -220,3 +206,51 @@ $(document).ready(function(){
         crossorigin="anonymous"></script>
 </body>
 </html>
+<script>
+    $(document).ready(function () {
+
+        $('#skill').tokenfield({
+            autocomplete: {
+                source: ['PHP', 'Codeigniter', 'HTML', 'JQuery', 'Javascript', 'CSS', 'Laravel', 'CakePHP', 'Symfony', 'Yii 2', 'Phalcon', 'Zend', 'Slim', 'FuelPHP', 'PHPixie', 'Mysql'],
+                delay: 100
+            },
+            showAutocompleteOnFocus: true
+        });
+
+        $('#programmer_form').on('submit', function (event) {
+            event.preventDefault();
+            if ($.trim($('#name').val()).length == 0) {
+                alert("Please Enter Your Name");
+                return false;
+            } else if ($.trim($('#skill').val()).length == 0) {
+                alert("Please Enter Atleast one Skill");
+                return false;
+            } else {
+                var form_data = $(this).serialize();
+                $('#submit').attr("disabled", "disabled");
+                $.ajax({
+                    url: "insert.php",
+                    method: "POST",
+                    data: form_data,
+                    beforeSend: function () {
+                        $('#submit').val('Submitting...');
+                    },
+                    success: function (data) {
+                        if (data != '') {
+                            $('#name').val('');
+                            $('#skill').tokenfield('setTokens', []);
+                            $('#success_message').html(data);
+                            $('#submit').attr("disabled", false);
+                            $('#submit').val('Submit');
+                        }
+                    }
+                });
+                setInterval(function () {
+                    $('#success_message').html('');
+                }, 5000);
+            }
+        });
+
+    });
+</script>
+
