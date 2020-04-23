@@ -5,6 +5,10 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+#tags.li {
+    display: inline;
+}
+
 #filter {
     width: 60%;
     padding-right: 15px;
@@ -5239,7 +5243,7 @@ input[type="button"].btn-block {
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
-    margin-bottom: 20px;
+    margin: 5px;
 }
 
 .card > hr {

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="321436e1-3b8f-400c-9754-eb2a38cbc205" name="Default Changelist" comment="">
+    <list default="true" id="321436e1-3b8f-400c-9754-eb2a38cbc205" name="Default Changelist" comment="[Fix] Ajust responsive images in tags">
       <change afterPath="$PROJECT_DIR$/../UFOP/19.1/Mineração de Dados/.idea/Mineração de Dados.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../UFOP/19.2/Compiladores/tigris-ocaml-master/.idea/tigris-ocaml-master.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../UFOP/Curso Python/Exercícios/.idea/Seção 6.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../UFOP/Curso Python/guppe/.idea/guppe.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../UFOP/maekawa/.idea/maekawa.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../UFOP/sd/.idea/sd.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teste.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/activities.html" beforeDir="false" afterPath="$PROJECT_DIR$/activities.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/events.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/tags.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585519363024</updated>
       <workItem from="1586124781510" duration="1629000" />
-      <workItem from="1587596184139" duration="7928000" />
+      <workItem from="1587596184139" duration="11736000" />
     </task>
     <task id="LOCAL-00001" summary="[Add] about page">
       <created>1585639126281</created>
@@ -278,5 +278,31 @@
     <MESSAGE value="[Fix] Put profile image in left" />
     <MESSAGE value="[Fix] Ajust responsive images in tags" />
     <option name="LAST_COMMIT_MESSAGE" value="[Fix] Ajust responsive images in tags" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1952" y="198" key="#Inspections" timestamp="1587611717401">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1952" y="198" key="#Inspections/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1587611717401" />
+    <state x="1951" y="88" width="1281" height="864" key="CommitChangelistDialog2" timestamp="1587613786439">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1951" y="88" width="1281" height="864" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1587613786439" />
+    <state x="2427" y="433" key="VCS.ChangelistChooser" timestamp="1587613762168">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2427" y="433" key="VCS.ChangelistChooser/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1587613762168" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/tags.html</url>
+          <line>131</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
