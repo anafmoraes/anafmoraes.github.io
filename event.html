@@ -54,6 +54,11 @@
                 Ana Luiza Moraes
             </div>
         </div>
+        <div class="btn-group btn-group-lg float-right" role="group" aria-label="...">
+            <button class="btn btn-outline-danger btn-sm mr-2"><i class="far fa-heart"></i> Curtir</button>
+            <a href="#comment" class="btn btn-outline-primary btn-sm mr-2"><i class="far fa-comment"></i> Comentar</a>
+            <button class="btn btn-outline-warning btn-sm mr-2"><i class="fas fa-deaf"></i> Avaliar</button>
+        </div>
     </div>
 </div>
 <div class="container">
@@ -113,9 +118,6 @@
         <div class="card col-lg-10 col-md-12 col-sm-12">
             <p class="lead">Comentários</p>
             <div class="card-body bg-light">
-                <p class="text-muted text-right">
-                    Segunda-feira, 13 de abril de 2020, 17:35
-                </p>
                 <div class="row">
                     <div class="flex-item">
                         <img class="img-rounded img-responsive profile-avatar" src="img/default.jpg"
@@ -174,6 +176,29 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
                             interdum blandit massa id placerat.
                         </p>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="card-body bg-light" id="comment">
+                <div class="row">
+                    <div class="flex-item">
+                        <img class="img-rounded img-responsive profile-avatar" src="img/default.jpg"
+                             alt="create by photo"
+                             width="60px">
+                    </div>
+                    &nbsp
+                    <div class="col-10">
+                        <form>
+                            <label> <strong> Ana Luiza Moraes</strong></label>
+                            <div class="form-row">
+                                <div class="col-10">
+                                    <input type="text" class="form-control" placeholder="Escreva um comentário">
+                                </div>
+                                <button class="btn btn-outline-success"><i class="fas fa-paper-plane"></i> Enviar
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

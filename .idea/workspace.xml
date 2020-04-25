@@ -8,10 +8,9 @@
       <change afterPath="$PROJECT_DIR$/../UFOP/Curso Python/guppe/.idea/guppe.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../UFOP/maekawa/.idea/maekawa.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../UFOP/sd/.idea/sd.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activities.html" beforeDir="false" afterPath="$PROJECT_DIR$/activities.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event.html" beforeDir="false" afterPath="$PROJECT_DIR$/event.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +20,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -42,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/monografia" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -62,7 +62,8 @@
       <updated>1585519363024</updated>
       <workItem from="1586124781510" duration="1629000" />
       <workItem from="1587596184139" duration="12645000" />
-      <workItem from="1587674281722" duration="4473000" />
+      <workItem from="1587674281722" duration="4612000" />
+      <workItem from="1587837253476" duration="13796000" />
     </task>
     <task id="LOCAL-00001" summary="[Add] about page">
       <created>1585639126281</created>
@@ -204,17 +205,22 @@
       <option name="project" value="LOCAL" />
       <updated>1586317713322</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Include modal video from youtube">
+      <created>1587840851870</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1587840851870</updated>
+    </task>
+    <task id="LOCAL-00022" summary="[Add] Create event detail page">
+      <created>1587847529831</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1587847529831</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
@@ -277,7 +283,9 @@
     <MESSAGE value="[Fix] Include images in file" />
     <MESSAGE value="[Fix] Put profile image in left" />
     <MESSAGE value="[Fix] Ajust responsive images in tags" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Fix] Ajust responsive images in tags" />
+    <MESSAGE value="Include modal video from youtube" />
+    <MESSAGE value="[Add] Create event detail page" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Add] Create event detail page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1952" y="198" key="#Inspections" timestamp="1587611717401">
@@ -288,14 +296,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1587677128446" />
-    <state x="186" y="0" width="979" height="728" key="CommitChangelistDialog2" timestamp="1587677195815">
+    <state x="186" y="0" width="979" height="728" key="CommitChangelistDialog2" timestamp="1587847528226">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="1951" y="88" width="1281" height="864" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1587613786439" />
-    <state x="186" y="0" width="979" height="728" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1587677195815" />
+    <state x="186" y="0" width="979" height="728" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1587847528226" />
     <state x="2427" y="433" key="VCS.ChangelistChooser" timestamp="1587613762168">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
     <state x="2427" y="433" key="VCS.ChangelistChooser/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1587613762168" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1587847538126">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1587847538126" />
   </component>
 </project>
